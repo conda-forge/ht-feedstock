@@ -1,18 +1,18 @@
 {% set name = "ht" %}
-{% set version = "0.1.54" %}
+{% set version = "0.1.55" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 458aaeffe395634f3a50de750f714b937936bc6d31f759e342eba0a2929377a2
+  sha256: ae034648e7b8f104f068c66a2464a35a4bf61664127535d80868604804a89df3
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
     and is free of charge. ht is designed to be easy to use while still providing powerful functionality. 
     If you need to perform some heat transfer calculations, give ht a try.
   doc_url: https://ht.readthedocs.io/en/latest/
-  dev_url: https://github.com/CalebBell/ht 
+  dev_url: https://github.com/CalebBell/ht
 
 extra:
   recipe-maintainers:
