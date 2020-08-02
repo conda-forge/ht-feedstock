@@ -5,7 +5,7 @@ Home: https://github.com/CalebBell/ht
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Heat transfer component of Chemical Engineering Design Library (ChEDL)
 
