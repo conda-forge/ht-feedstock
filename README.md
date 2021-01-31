@@ -5,9 +5,13 @@ Home: https://github.com/CalebBell/ht
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ht-feedstock/blob/master/LICENSE.txt)
 
 Summary: Heat transfer component of Chemical Engineering Design Library (ChEDL)
+
+Development: https://github.com/CalebBell/ht
+
+Documentation: https://ht.readthedocs.io/en/latest/
 
 ht is open-source software for engineers and technicians working in the fields of chemical
 or mechanical engineering. It includes modules for various heat transfer functions.
