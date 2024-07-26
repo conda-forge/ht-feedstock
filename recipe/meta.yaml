@@ -1,5 +1,5 @@
 {% set name = "ht" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6ca7521e900cf145f39982274cefdcda6bd8e3961d7347629e4311c473127888
+  sha256: 2276c198db98e8b204ac13e61e97542124e1f3bf0c0ad5b304642e04bda6dd91
 
 build:
   number: 0
