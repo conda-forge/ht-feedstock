@@ -17,11 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
+    - setuptools
   run:
-    - fluids >=0.1.64
+    - fluids >=1.0.27
     - numpy >=1.5.0
-    - python
+    - python >=3.6
     - scipy >=0.9.0
 
 test:
