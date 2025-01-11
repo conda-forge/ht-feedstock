@@ -10,22 +10,24 @@ source:
   sha256: b421bfacb473d7a94c87fc7ab000ca8ff10a17aeb1983260278375981c8566aa
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - fluids >=1.0.27
     - numpy >=1.5.0
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy >=0.9.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ht
 
